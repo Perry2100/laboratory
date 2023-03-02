@@ -1,0 +1,34 @@
+EXCERCISE 1
+Mylnt is a custom type that is defined using typedef which represents a long integer.
+double represents floating-point numbers with double precision.
+float represents floating-point numbers with single precision.
+
+int represents integers.
+int d = 123, t = 456; declares and initializes two integer variables d and t to 123 and 456, respectively.
+double n, m; declares two double variables n and m without initializing them.
+
+Mylnt l = 0; declares a Mylnt variable l and initializes it to 0.
+int a = 100; declares an integer variable a and initializes it to 100.
+a = 3.14; assigns a value of 3.14 to the variable a, but a is an integer, this will result in the value been truncated to 3.
+
+for (int a = 0; a < N; a++) l += a; declares a new integer variable a that is local to the for loop, and initializes it to 0. The loop executes N times and adds the loop variable a to the variable l.
+n = 1 * N + a; multiplies 1 and N, adds the result to a, and assigns the result to n. Since N is a constant expression defined using #define, it is replaced with the value 5 during preprocessing.
+m = g(d, t); calls the function g with arguments d and t, and assigns the result to m.
+return 0; returns an integer value of 0 from the _tmain function, indicating successful execution of the program.
+
+in general i think that the types and variables in this program perform arithmetic operations and store intermediate results.
+
+n = 105, m = 456.813
+
+EXERCISE 2
+this code has the following errors:
+
+The code is missing the using namespace std; statement to enable the usage of cout and cin without the std:: prefix.
+The declaration of the integer variables x, y, z, and d is missing the keyword int before each variable name.
+The pointers x, y, and z are uninitialized and do not point to any valid memory location. This means that when the code tries to dereference them using the * operator, it will result in undefined behavior.
+There is a syntax error on the cin line, where the colon : should be a semicolon ;.
+The comparison operators > are used to compare pointers x, y, and z instead of their values *x, *y, and *z. This will lead to incorrect comparisons and results.
+The output statement for x, y, and z is printing the pointer values instead of their values. To print their values, you should dereference the pointers using the * operator.
+The difference between z and x should be printed using parentheses to avoid potential precedence issues.
+
+EXERCISE 3
