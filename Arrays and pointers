@@ -18,7 +18,6 @@ return 0; returns an integer value of 0 from the _tmain function, indicating suc
 
 in general i think that the types and variables in this program perform arithmetic operations and store intermediate results.
 
-n = 105, m = 456.813
 
 EXERCISE 2
 this code has the following errors:
